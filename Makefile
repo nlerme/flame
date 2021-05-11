@@ -17,11 +17,11 @@ OBJ       = $(SRC:%.$(FILES_EXT)=$(OBJ_DIR)/%.o)
 all: header depend $(OBJ) $(TARGET) footer
 
 header:
-	@echo -e "-----------------------------------------------------------------------------"
-	@echo -e "$(PROJECT_NAME) v$(PROJECT_VERSION) - $(PROJECT_DESCRIPTION)"
-	@echo -e "Authors: $(PROJECT_AUTHORS)"
-	@echo -e "Last release: $(PROJECT_LAST_RELEASE)"
-	@echo -e "-----------------------------------------------------------------------------\n"
+	@echo -e "+------------------------------------------------------------------------------------------"
+	@echo -e "| $(PROJECT_NAME) - $(PROJECT_DESCRIPTION)"
+	@echo -e "| Version: $(PROJECT_VERSION)"
+	@echo -e "| Authors: $(PROJECT_AUTHORS)"
+	@echo -e "+------------------------------------------------------------------------------------------\n"
 
 depend:
 	@echo -n "+ Generate dependencies : "
@@ -53,7 +53,7 @@ clean_doc:
 	@$(MAKE) -C $(DOC_DIR) -s clean
 
 footer:
-	@echo -e "\n-----------------------------------------------------------------------------"
+	@echo -e "\n-------------------------------------------------------------------------------------------"
 
 include Makefile.depend
 
