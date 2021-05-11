@@ -1,0 +1,21 @@
++---------------------------------------------------------------------------------+
+|                                                                                 |
+|                                     README                                      |
+|                                                                                 |
++---------------------------------------------------------------------------------+
+
+
+[ Presentation ]
+----------------
+Tiny library for drawing easily different kinds of fractals.
+
+[ Compiling ]
+-------------
+Once the archive unzipped, go into the root directory and type `make'.
+
+[ Using ]
+---------
+Launch the main program by typing `./main'.
+
+--[ Documentation ]--
+For any extra information, please consult the documentation with `make doc'.
